@@ -492,6 +492,18 @@ nav {
   .third-img > img {
     width: 80%;
   }
+
+  .page6-submain {
+    display: block;
+  }
+
+  .page6-headings {
+    margin-bottom: 6em;
+  }
+
+  .page6-grid {
+    gap: 0;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {

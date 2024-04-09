@@ -1,0 +1,507 @@
+* {
+  font-family: "Inter", "Inter Placeholder", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #000;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  background: url("https://framerusercontent.com/images/LfIclNuYCQna2qhPpR9UVnDnOio.svg")
+    no-repeat;
+  background-size: 100% 96%;
+  min-height: 100vh;
+  color: #fff;
+}
+
+nav {
+  border: none;
+  text-align: center;
+  width: 100%;
+  height: 5em;
+  color: #94a3b8;
+  cursor: pointer;
+}
+
+.brand-and-img {
+  display: flex;
+  float: left;
+  text-align: center;
+  margin: 1em 0 0 2em;
+  gap: 8px;
+}
+
+.first-img {
+  width: 2.4em;
+}
+
+.first-a {
+  text-decoration: none;
+  color: #94a3b8;
+  font-size: 22px;
+  margin-top: 6px;
+}
+
+.first-a:hover {
+  color: #fff;
+}
+
+.first-svg:hover {
+  fill: #fff;
+}
+
+.navBar ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin: 1em 2em 0 0;
+  text-align: center;
+  float: right;
+}
+
+.navBar {
+  position: sticky;
+  z-index: 9;
+  top: 0vh;
+  transition: 1s;
+}
+
+.stickyNav {
+  position: fixed;
+  background-color: #020617;
+  border: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10em 0;
+}
+
+.firsth1,
+.firsth2 {
+  font-size: 6.4em;
+  color: #fff;
+  line-height: 1.1em;
+}
+
+.firsth2 {
+  color: #92c5fd;
+}
+
+.first-p {
+  font-size: 1.2em;
+  color: #94a3b8;
+  line-height: 1.5em;
+  inline-size: 25em;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.down-arrow {
+  margin-top: 2.6em;
+}
+
+.page2 {
+  padding: 8em 20em;
+}
+
+.page2-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 6em;
+}
+
+.page2-grid1 {
+  padding-right: 4em;
+}
+
+.marks {
+  color: #1c4ed8;
+  line-height: 2em;
+  font-size: 19px;
+}
+
+.page2-grid2 > img,
+.third-img > img {
+  width: 100%;
+  border-radius: 2em;
+}
+
+.page2-btn {
+  width: 18em;
+  height: 3.3em;
+  border-radius: 56px;
+  border: none;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  text-decoration: none;
+  background-color: #020617;
+  color: #fff;
+}
+
+.sec-paragraph p {
+  padding: 1em 0;
+}
+
+.third-paragrahs {
+  color: #047857;
+  padding: 1em 0;
+  line-height: 2em;
+  font-size: 19px;
+}
+
+.page2-grid4,
+.page2-grid1 {
+  margin-top: 3em;
+}
+
+.page3 {
+  background: url("https://framerusercontent.com/images/e48HthKgkTj8ugmYfzk0KmClaLM.svg")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: #fff;
+
+  position: relative;
+}
+
+.page3-descrip {
+  margin-bottom: 14em;
+  font-size: 18px;
+}
+
+.page3-para p {
+  font-size: 2.7em;
+  margin-bottom: 1em;
+  inline-size: 10.6em;
+}
+
+.page3-main {
+  padding: 4em 0;
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+
+.page4-main {
+  padding: 8em 21em;
+}
+
+.leaders-logo {
+  width: 1.4em;
+}
+
+.page4-descrip {
+  color: #1c4ed8;
+  font-size: 18px;
+}
+
+.page4-heading p {
+  line-height: 1.3em;
+  font-size: 2em;
+}
+
+.page4-grid {
+  padding-top: 6em;
+  gap: 4em;
+}
+
+.sub-text-heading {
+  font-size: 20px;
+  line-height: 3em;
+}
+
+.sub-text {
+  line-height: 1.5em;
+  font-size: 18px;
+  color: #64748b;
+}
+
+.arrow {
+  width: 1.6em;
+}
+
+.page4-grid,
+.page6-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.page5 {
+  background-color: #020617;
+  color: #fff;
+}
+
+.page5-main {
+  padding: 4em 16em;
+}
+
+.page5-submain {
+  padding: 2em 6em;
+}
+
+.page5-heading,
+.page4-heading {
+  font-size: 3em;
+}
+
+.page5-para,
+.page4-para {
+  font-size: 1.4em;
+  inline-size: 21.8em;
+  line-height: 34px;
+  word-spacing: 4px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo > img {
+  width: 56%;
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 3em;
+  word-spacing: 4px;
+  line-height: 1.4em;
+}
+
+.logo-grid1 h2 {
+  color: #12b981;
+}
+
+.logo-grid2 h2 {
+  color: #3c82f6;
+}
+
+.logo-grid3 h2 {
+  color: #f97315;
+}
+
+.logo-grid h2 {
+  line-height: 2em;
+  font-size: 18px;
+}
+
+.logo-grid p {
+  color: #94a3b8;
+}
+
+.page6-main {
+  padding: 4em 20em;
+}
+
+.page6-submain {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6em;
+  gap: 3em;
+}
+
+.page6-headings {
+  display: block;
+}
+
+.page6-descrip {
+  font-size: 20px;
+  color: #c2410c;
+  font-weight: lighter;
+}
+
+.pag6-para {
+  font-size: 75px;
+  margin-top: 0.3em;
+}
+
+.page6-grid {
+  gap: 3em;
+}
+
+.page6-grid img {
+  width: 14em;
+  border-radius: 2em;
+}
+
+.page6-grid h2 {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.page6-grid p {
+  color: #64758b;
+  line-height: 3em;
+}
+
+.break {
+  padding: 4em 0 4em 0;
+}
+
+.after-break {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.after-break h2 {
+  font-size: 1.3em;
+}
+
+.after-break p {
+  font-size: 0.9em;
+  color: #64758b;
+}
+
+.after-break img {
+  width: 9em;
+}
+
+.page7 {
+  background: url("https://framerusercontent.com/images/tZzEYUYPcPlxFw6GKPQEMEEkoBM.svg")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: #fff;
+  position: relative;
+}
+
+.page7-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5em 20em 0 8em;
+  gap: 1em;
+  font-size: 2.6em;
+}
+
+.page7-btns {
+  display: flex;
+  gap: 0.6em;
+  padding-right: 3em;
+}
+
+.page7-btn1,
+.page7-btn2,
+.page3-btn {
+  width: 14em;
+  height: 3.3em;
+  border-radius: 56px;
+  border: none;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.page7-btn1,
+.page3-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  text-decoration: none;
+}
+
+.page7-btn2 {
+  background-color: #292b3a;
+  color: #fff;
+}
+
+.page7-contact {
+  display: flex;
+  margin-left: 10em;
+}
+
+.page7-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10em 22em 4em 18em;
+  text-align: right;
+  line-height: 2em;
+  font-size: 0.9em;
+  color: #94a3b8;
+}
+
+.page7-con {
+  font-size: 1.3em;
+}
+
+.page7-footer ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  text-align: center;
+  float: right;
+}
+
+.page7-footer img {
+  width: 1em;
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    width: 80%;
+    min-width: fit-content;
+    min-height: 100vh;
+  }
+
+  .page2-grid {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 4em;
+  }
+
+  .page4-grid {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .page3-descrip {
+    margin-bottom: 10em;
+  }
+
+  .page2-grid2 > img,
+  .third-img > img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    width: 100%;
+    min-width: fit-content;
+    min-height: 100vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    width: 100%;
+    min-width: fit-content;
+    min-height: 100vh;
+  }
+}

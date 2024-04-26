@@ -256,6 +256,15 @@ nav {
   padding: 2em 6em;
 }
 
+.page5-logo,
+.page4-logo,
+.page3-logo,
+.page6-logo {
+  display: flex;
+  gap: 8px;
+  align-items: end;
+}
+
 .page5-heading,
 .page4-heading {
   font-size: 3em;

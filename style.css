@@ -494,6 +494,10 @@ nav {
     overflow-x: hidden;
   }
 
+  .page1 {
+    background-size: cover;
+  }
+
   nav {
     height: 4em;
   }
@@ -638,6 +642,10 @@ nav {
     border-radius: 1em;
   }
 
+  .page6-grid h2 {
+    font-size: 18px;
+  }
+
   .page6-headings {
     margin-bottom: 6em;
   }
@@ -681,7 +689,9 @@ nav {
     min-height: 100vh;
     overflow-x: hidden;
   }
-
+  .page1 {
+    background-size: cover;
+  }
   .navBar ul {
     display: none;
   }
@@ -814,6 +824,10 @@ nav {
     border-radius: 1em;
   }
 
+  .page6-grid h2 {
+    font-size: 18px;
+  }
+
   .page6-headings {
     margin-bottom: 6em;
   }
@@ -850,7 +864,9 @@ nav {
     padding: 0;
     margin: 0;
   }
-
+  .page1 {
+    background-size: cover;
+  }
   .navBar ul {
     display: none;
   }

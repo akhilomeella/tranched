@@ -11,12 +11,11 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
+.page1 {
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
-  background: url("https://framerusercontent.com/images/LfIclNuYCQna2qhPpR9UVnDnOio.svg")
-    no-repeat;
+  background-image: url("https://framerusercontent.com/images/LfIclNuYCQna2qhPpR9UVnDnOio.svg");
+  background-repeat: no-repeat;
   background-size: 100% 96%;
   min-height: 100vh;
   color: #fff;
@@ -52,6 +51,7 @@ nav {
 
 .first-a:hover {
   color: #fff;
+  cursor: pointer;
 }
 
 .first-svg:hover {
@@ -85,6 +85,7 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 10em 0;
+  height: 100vh;
 }
 
 .firsth1,
@@ -125,6 +126,10 @@ nav {
   padding-right: 4em;
 }
 
+.sec-h2 {
+  font-size: 4em;
+}
+
 .marks {
   color: #1c4ed8;
   line-height: 2em;
@@ -156,6 +161,7 @@ nav {
 
 .sec-paragraph p {
   padding: 1em 0;
+  font-size: 23px;
 }
 
 .third-paragrahs {
@@ -171,32 +177,32 @@ nav {
 }
 
 .page3 {
-  background: url("https://framerusercontent.com/images/e48HthKgkTj8ugmYfzk0KmClaLM.svg")
-    no-repeat;
+  background-image: url("https://framerusercontent.com/images/e48HthKgkTj8ugmYfzk0KmClaLM.svg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
   color: #fff;
-
   position: relative;
 }
 
+.page3-main {
+  padding: 4em 0 12em 0;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+
 .page3-descrip {
-  margin-bottom: 14em;
   font-size: 18px;
+  block-size: 16em;
 }
 
 .page3-para p {
   font-size: 2.7em;
-  margin-bottom: 1em;
+  block-size: 8em;
   inline-size: 10.6em;
-}
-
-.page3-main {
-  padding: 4em 0;
-  position: absolute;
-  top: 0;
-  left: 20%;
 }
 
 .page4-main {
@@ -224,7 +230,7 @@ nav {
 
 .sub-text-heading {
   font-size: 20px;
-  line-height: 3em;
+  padding: 1rem 0;
 }
 
 .sub-text {
@@ -273,7 +279,6 @@ nav {
 .page5-para,
 .page4-para {
   font-size: 1.4em;
-  inline-size: 21.8em;
   line-height: 34px;
   word-spacing: 4px;
 }
@@ -335,7 +340,6 @@ nav {
 .page6-descrip {
   font-size: 20px;
   color: #c2410c;
-  font-weight: lighter;
 }
 
 .pag6-para {
@@ -353,13 +357,12 @@ nav {
 }
 
 .page6-grid h2 {
-  font-size: 18px;
-  font-weight: 100;
+  font-size: 20px;
 }
 
 .page6-grid p {
   color: #64758b;
-  line-height: 3em;
+  padding: 1em 0;
 }
 
 .break {
@@ -388,23 +391,34 @@ nav {
 }
 
 .page7 {
-  background: url("https://framerusercontent.com/images/tZzEYUYPcPlxFw6GKPQEMEEkoBM.svg")
-    no-repeat;
+  background-image: url("https://framerusercontent.com/images/tZzEYUYPcPlxFw6GKPQEMEEkoBM.svg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
   color: #fff;
-  position: relative;
 }
 
-.page7-text {
+.page7-main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 5em 20em 0 8em;
+  padding: 4em 0;
+  min-height: 100vh;
+}
+
+.page7-text {
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 0;
   gap: 1em;
   font-size: 2.6em;
+  block-size: 16em;
+  margin-left: 8em;
+  inline-size: 10em;
 }
 
 .page7-btns {
@@ -440,19 +454,21 @@ nav {
 }
 
 .page7-contact {
-  display: flex;
+  margin-right: 16em;
+  float: right;
+}
+
+.page7-links {
   margin-left: 10em;
 }
 
 .page7-footer {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 10em 22em 4em 18em;
+  display: block;
   text-align: right;
   line-height: 2em;
   font-size: 0.9em;
   color: #94a3b8;
+  float: right;
 }
 
 .page7-con {
@@ -464,7 +480,6 @@ nav {
   list-style: none;
   gap: 10px;
   text-align: center;
-  float: right;
 }
 
 .page7-footer img {
@@ -472,14 +487,51 @@ nav {
 }
 
 @media only screen and (max-width: 480px) {
+  body,
   html {
     width: 100%;
-    min-width: fit-content;
     min-height: 100vh;
+    overflow-x: hidden;
   }
 
-  header {
-    background-size: cover;
+  nav {
+    height: 4em;
+  }
+
+  .navBar ul {
+    display: none;
+  }
+
+  .first-img {
+    width: 2em;
+  }
+
+  .first-a {
+    font-size: 18px;
+  }
+
+  .brand-and-img {
+    margin: 1em 0 0 1em;
+  }
+
+  .firsth1,
+  .firsth2 {
+    font-size: 3em;
+  }
+
+  .first-p {
+    font-size: 1.2em;
+    inline-size: 12em;
+  }
+
+  .container {
+    padding: 10em 2em;
+  }
+
+  .page2 {
+    padding: 4em 1.8em;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .page2-grid {
@@ -488,13 +540,23 @@ nav {
     gap: 4em;
   }
 
-  .page4-grid {
-    display: grid;
-    grid-template-columns: auto;
+  .sec-h2 {
+    font-size: 3em;
   }
 
-  .page3-descrip {
-    margin-bottom: 10em;
+  .sec-paragraph p {
+    font-size: 18px;
+    line-height: 1.3em;
+  }
+
+  .marks,
+  .third-paragrahs {
+    font-size: 16px;
+  }
+
+  .page2-btn {
+    width: 16em;
+    font-size: 12px;
   }
 
   .page2-grid2 > img,
@@ -502,8 +564,254 @@ nav {
     width: 80%;
   }
 
+  .page3 {
+    background-size: auto;
+
+    height: 100vh;
+  }
+
+  .page3-main {
+    left: 10%;
+    width: 100%;
+    padding: 2em 0 12em 0;
+  }
+
+  .page3-para p {
+    block-size: 10em;
+    font-size: 2em;
+    inline-size: 7em;
+  }
+
+  .page3-descrip {
+    font-size: 18px;
+    block-size: 10em;
+  }
+
+  .page4-grid {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .page4-main {
+    padding: 6em 2em;
+  }
+
+  .page4-heading,
+  .page5-heading {
+    font-size: 1.4em;
+    padding: 1rem 0;
+  }
+
+  .page4-para {
+    font-size: 20px;
+  }
+  .page2-grid1 {
+    padding-right: 0;
+  }
+
+  .page5-main {
+    padding: 6em 2em;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .logo > img {
+    width: 100%;
+  }
+
+  .page5-submain {
+    padding: 0;
+  }
+
+  .page6-main {
+    padding: 4em 1em;
+  }
+
   .page6-submain {
     display: block;
+  }
+
+  .page6-grid img {
+    width: 7em;
+    border-radius: 1em;
+  }
+
+  .page6-headings {
+    margin-bottom: 6em;
+  }
+
+  .pag6-para {
+    font-size: 50px;
+  }
+
+  .page6-grid {
+    gap: 2em;
+  }
+
+  .page7-text {
+    justify-content: flex-start;
+    margin-left: 1em;
+    font-size: 2em;
+    block-size: 18em;
+  }
+
+  .page7-btns {
+    display: block;
+  }
+
+  .btn1 {
+    padding-bottom: 20px;
+  }
+
+  .page7-contact {
+    margin-right: 1em;
+  }
+
+  .page7-footer {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  body,
+  html {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .navBar ul {
+    display: none;
+  }
+  nav {
+    height: 4em;
+  }
+
+  .first-img {
+    width: 2em;
+  }
+
+  .first-a {
+    font-size: 18px;
+  }
+
+  .firsth1,
+  .firsth2 {
+    font-size: 3em;
+  }
+
+  .first-p {
+    font-size: 1.2em;
+  }
+
+  .container {
+    padding: 10em 2em;
+  }
+
+  .page2 {
+    padding: 4em 1.8em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page2-grid {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 4em;
+  }
+
+  .sec-h2 {
+    font-size: 3em;
+  }
+
+  .sec-paragraph p {
+    font-size: 18px;
+    line-height: 1.3em;
+  }
+
+  .marks,
+  .third-paragrahs {
+    font-size: 16px;
+  }
+
+  .page2-btn {
+    width: 16em;
+    font-size: 12px;
+  }
+
+  .page2-grid2 > img,
+  .third-img > img {
+    width: 100%;
+  }
+
+  .page3 {
+    background-size: auto;
+
+    height: 100vh;
+  }
+
+  .page3-main {
+    left: 10%;
+    padding: 2em 0 12em 0;
+    width: 100%;
+  }
+
+  .page3-para p {
+    block-size: 8em;
+    font-size: 2em;
+  }
+
+  .page3-descrip {
+    font-size: 18px;
+    block-size: 10em;
+  }
+
+  .page4-grid {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .page4-main {
+    padding: 6em 2em;
+  }
+
+  .page4-heading p {
+    font-size: 1em;
+  }
+
+  .page4-para {
+    font-size: 20px;
+  }
+
+  .page5-main {
+    padding: 6em 2em;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .logo > img {
+    width: 100%;
+  }
+
+  .page5-submain {
+    padding: 0;
+  }
+
+  .page6-main {
+    padding: 4em 1em;
+  }
+
+  .page6-submain {
+    display: block;
+  }
+
+  .page6-grid img {
+    width: 80%;
+    border-radius: 1em;
   }
 
   .page6-headings {
@@ -511,22 +819,186 @@ nav {
   }
 
   .page6-grid {
-    gap: 0;
+    gap: 2em;
+  }
+  .page7-text {
+    justify-content: flex-start;
+    margin-left: 1em;
+    font-size: 2em;
+    block-size: 18em;
+  }
+
+  .page7-btns {
+    display: block;
+  }
+
+  .btn1 {
+    padding-bottom: 20px;
+  }
+
+  .page7-contact {
+    margin-right: 1em;
   }
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  body,
   html {
     width: 100%;
-    min-width: fit-content;
     min-height: 100vh;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navBar ul {
+    display: none;
+  }
+
+  .first-p {
+    font-size: 1.2em;
+    inline-size: 40em;
+  }
+
+  .container {
+    padding: 10em 2em;
+  }
+
+  .page2-grid1 {
+    padding-right: 0;
+  }
+
+  .page2 {
+    padding: 4em 1.8em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page2-grid2 > img,
+  .third-img > img {
+    width: 100%;
+  }
+
+  .page4-main {
+    padding: 6em 2em;
+  }
+  .page4-para {
+    font-size: 20px;
+  }
+
+  .page5-main {
+    padding: 6em 2em;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .logo > img {
+    width: 100%;
+  }
+
+  .page5-submain {
+    padding: 0;
+  }
+
+  .page6-main {
+    padding: 4em 1em;
+  }
+
+  .page6-submain {
+    display: block;
+  }
+
+  .page6-grid img {
+    width: 100%;
+    border-radius: 1em;
+  }
+
+  .page6-headings {
+    margin-bottom: 6em;
+  }
+
+  .page6-grid {
+    gap: 2em;
+  }
+  .page7-text {
+    margin-left: 5em;
+    font-size: 2em;
+    block-size: 18em;
+  }
+
+  .page7-btns {
+    display: block;
+  }
+
+  .btn1 {
+    padding-bottom: 20px;
+  }
+
+  .page7-contact {
+    margin-right: 3em;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
+  body,
   html {
     width: 100%;
-    min-width: fit-content;
     min-height: 100vh;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navBar ul {
+    display: none;
+  }
+
+  .first-p {
+    font-size: 1.2em;
+  }
+
+  .page2-grid1 {
+    padding-right: 0;
+  }
+
+  .page2 {
+    padding: 4em 1.8em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page2-grid2 > img,
+  .third-img > img {
+    width: 100%;
+  }
+
+  .page4-main {
+    padding: 6em 2em;
+  }
+  .page4-para {
+    font-size: 20px;
+  }
+
+  .page5-main {
+    padding: 6em 2em;
+  }
+
+  .page6-main {
+    padding: 4em 1em;
+  }
+  .page7-text {
+    margin-left: 4em;
+    font-size: 2em;
+    block-size: 24em;
+  }
+
+  .btn1 {
+    padding-bottom: 20px;
+  }
+
+  .page7-contact {
+    margin-right: 3em;
   }
 }
